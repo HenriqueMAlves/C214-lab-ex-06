@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "df1b112c-743e-4c72-8e5d-a15a45db62b6",
+		"name": "ex06",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Movie/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test 2\",\r\n    \"producer\": \"producer test 2\",\r\n    \"actors\": [\"actor 4\", \"actor 5\", \"actor 6\"],\r\n    \"year\": 2012\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/movie/create",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/movie/list",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test 2\",\r\n    \"producer\": \"test 2\",\r\n    \"actors\": [\"4\", \"5\", \"6\"],\r\n    \"year\": 2045\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/movie/update",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie/delete",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Movie/listByYear",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 1998\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/movie/listByYear",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"movie",
+						"listByYear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
